@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/card_view"
+        android:layout_centerInParent="true"
+        android:layout_width="260dp"
+        android:layout_height="430dp"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            android:src="@drawable/p1"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:id="@+id/card_content"
+            android:background="@drawable/animate_rect"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:padding="15dp">
+            <TextView
+                android:id="@+id/title"
+                android:textColor="#03A9F4"
+                android:textSize="25sp"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vector card"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_content"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_below="@id/title"
+                android:text="Lorem ipsum dolor sit amet, Duis aute irure dolor in reprehenderit sunt in culpa quilaborum. in voluptate velit esse cillum dolore eu fugiat nulla ."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:alpha="0"
+                android:visibility="gone"
+                android:background="@drawable/button_bg"
+                android:layout_width="68dp"
+                android:layout_height="39dp"
+                android:textColor="#fff"
+                android:text="View"
+                android:textSize="16sp"
+
+                android:id="@+id/button"
+                android:layout_below="@+id/tv_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+</RelativeLayout>
