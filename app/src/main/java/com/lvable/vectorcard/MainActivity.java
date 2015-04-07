@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
                     ((Animatable) drawable).start();
                     btn.setVisibility(View.VISIBLE);
                     btn.animate().alpha(1).scaleX(1.1f).scaleY(1.1f).setInterpolator(new AccelerateInterpolator()).setDuration(350).start();
-                    
+
                 }
             }
         });
